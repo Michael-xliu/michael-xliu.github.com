@@ -16,8 +16,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-As an aspiring data scientist with a strong foundation in business analytics, I aim to leverage my analytical and financial skills to drive success. My journey began with a **Bachelor's degree in Business Administration** from the University of Washington, and I'm currently pursuing a **Master of Science in Data Science** at Southern Methodist University, maintaining a perfect GPA. My technical proficiency spans **Python, R, SQL, and TensorFlow**, complemented by certifications in **AI** from Harvard and **Excel Skills for Business** from JP Morgan and Goldman Sachs.
+I am currently a **Data Scientist** at a leading **venture** firm, where I specialize in leveraging cutting-edge technologies to drive efficiency and innovation. **My passion** lies in harnessing the power of **large language models (LLMs)** to streamline workflows, uncover insights, and build impactful tools that empower teams and improve decision-making processes.
 
-I am currently working as a graduate study researcher and teaching assistant.
+I hold a **Master's degree in Data Science and a Bachelor's degree in Business**, which together provide me with a unique blend of technical expertise and strategic thinking. This combination allows me to bridge the gap between data and business, creating solutions that are both innovative and practical.
 
-I bring a unique blend of technical expertise, business acumen, and a passion for data-driven solutions, eager to make a significant impact in the field of data science.
+Let's **connect** to explore how we can shape the future with AI-driven tools and strategies!

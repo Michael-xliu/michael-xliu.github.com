@@ -3,7 +3,7 @@ layout: page
 title: Traffic Sign Classification
 description: CNN Traffic Sign Classification
 img: /assets/img/GTSRB/output_10_0.png
-importance: 1
+importance: 2
 category: work
 ---
 - Built and trained a Convolutional Neural Network (CNN) using TensorFlow to classify 43 types of traffic signs, using over 60,000 images from the German Traffic Sign Recognition Benchmark (GTSRB) dataset.

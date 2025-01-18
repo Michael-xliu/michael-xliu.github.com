@@ -1,0 +1,62 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Haitie Liu
+    - name: Languages
+      value: English, Mandarin
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Master's Degree
+      institution: Southern Methodist University
+      year: 2024
+      description:
+        - Data Science.
+        - Machine Learning / Business Analytics.
+    - title: Bachelor's Degree
+      institution: University of Washington
+      year: 2018
+      description:
+        - Business Adminitration.
+        - Marketing/Management.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Graduate Study Researcher & Teaching Assistant
+      institution: Southern Methodist University, Dallas, TX
+      year: 2023-2024
+      description:
+        - Conduct weekly office hours for a class of 20 students, assisted students in mastering statistical and machine learning concepts through hands-on workshops.
+        - Collaborate with faculty in the creation of tutorials covering linear regression, multi-linear regression, logistic regression, classification, and machine learning models including Knn and decision trees.
+        - Develop and lead Python workshops, focusing on practical Python applications and machine learning models.
+        - Design, craft, and grade exams and quizzes, ensuring the curriculum remains current and effectively assesses student comprehension.
+
+- title: Certification
+  type: time_table
+  contents:
+    - title: <a href="https://www.linkedin.com/in/haitie-liu-a3b9ab122/details/certifications/1635553798690/single-media-viewer/?profileId=ACoAAB5nRg8B8OglRqD2xrgmXVEyKLGnvfi0zFw">Harvard's CS50 Artificial Intelligence Certificate</a>
+      year: Dec 2023
+      description: 11 projects focusing on Artificial Intelligence
+      
+    - title: <a href="https://www.credly.com/badges/0106a927-672c-48ad-97ec-54fefd8b05fb/linked_in_profile">Tableau Desktop Specialist</a>
+      year: Jul 2023
+      description: Foundational skills and understanding of Tableau
+      
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Machine Learning.
+      #items: 
+        #- Description 1.
+        #- Description 2.
+    - title: Business Analytics.
+
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Reading, Video Games, etc.

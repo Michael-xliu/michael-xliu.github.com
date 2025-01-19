@@ -7,9 +7,6 @@ importance: 1
 category: work
 ---
 
-# Multi-Agent Translation Team (MATT)
-
-## Enhancing Low-Resource Language Translation through Multi-Agent Workflow
 
 This document introduces the **Multi-Agent Translation Team (MATT)**, a novel approach to enhancing translations from English to low-resource languages using multi-agent workflows. Inspired by human collaborative problem-solving, MATT integrates advanced techniques with tools like **GPT-4o** and **Llama 3.1** to achieve high-quality translation outputs.
 

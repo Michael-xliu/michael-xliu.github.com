@@ -69,4 +69,4 @@ Language is essential for sharing and preserving knowledge. However, only a frac
 
 ---
 
-For further details, view the full article on [SMU Scholar](https://scholar.smu.edu/datasciencereview).
+For further details, view the full article on [SMU Scholar](https://scholar.smu.edu/datasciencereview), currently under review.

@@ -55,7 +55,7 @@ This project was a rewarding experience that combined game development with arti
 
 The complete implementation of my Minesweeper game, including the AI agent, is available on GitHub. Feel free to explore the code, try it out, and contribute if you're interested!
 
-[View the Minesweeper Project on GitHub](https://github.com/haitieliu)
+[View the Minesweeper Project on GitHub](https://github.com/Michael-xliu/minesweeper)
 
 In this repository, you'll find detailed code for the game logic, AI algorithms, and graphical interface using Pygame. The README file in the repository provides more information on how to set up and run the game.
 

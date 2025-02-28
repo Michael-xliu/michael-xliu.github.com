@@ -31,8 +31,6 @@ MATT addresses these challenges by integrating **multi-agent workflows**, ensuri
 
 ---
 
-## 🔬 Methodology
-
 ### 🚀 The MATT Architecture
 
 MATT refines translation in a **two-layered process**:
@@ -50,7 +48,6 @@ MATT refines translation in a **two-layered process**:
 
 ## 📊 Results & Performance Analysis
 
-### ✨ BLEU Score Comparison
 | Model | Vietnamese | Hindi | Malayalam |
 |--------|------------|------|------------|
 | Baseline | 0.2471 | 0.1390 | 0.0158 |

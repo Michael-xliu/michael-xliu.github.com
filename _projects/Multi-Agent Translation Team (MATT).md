@@ -10,8 +10,6 @@ category: work
 
 # Multi-Agent Translation Team (MATT): Enhancing Low-Resource Language Translation
 
-![Header Image Placeholder](./header-image.png)
-
 ## 📌 Abstract
 
 Large language models (LLMs) benefit from revision and refinement, much like human collaborators in complex tasks requiring critical thinking. This paper introduces **Multi-Agent Translation Team (MATT)**—a sophisticated, iterative multi-agent workflow that refines English-to-low-resource language translations. Leveraging **LLMs, Google Translate (GT), and role-based agents**, MATT systematically enhances translation accuracy for **Vietnamese, Hindi, and Malayalam**. 
@@ -22,9 +20,9 @@ This study presents a pioneering approach that outperforms baseline models by in
 
 ## 📖 Introduction
 
-![Language Diversity Image Placeholder](./language-diversity.png)
-
 Language serves as a **fundamental cultural bridge**, yet the majority of online content remains inaccessible to non-English speakers. Machine translation tools such as **Google Translate (GT)** have made strides, but they struggle with **low-resource languages**, where linguistic nuances and contextual subtleties are harder to encode. 
+
+---
 
 ### 🌍 Why This Matters
 - Only **15%** of the world speaks English, leaving vast knowledge inaccessible.
@@ -48,7 +46,7 @@ MATT refines translation in a **two-layered process**:
 - **Proofreader & Editor** – refine fluency, accuracy, style, and terminology.
 - **Editor-in-Chief** – quantifies **Loss in Translation (LiT)** and ensures quality control.
 
-![Workflow Diagram](./assets/img/MATT/Architecture.png)
+![Workflow Diagram](/assets/img/MATT/Architecture.png)
 
 ---
 
@@ -64,11 +62,10 @@ MATT refines translation in a **two-layered process**:
 - MATT **outperforms the baseline** consistently across all languages.
 - **Human evaluations** favor MATT over both **GT and baseline models** in fluency and contextual adaptation.
 
-![Results Graph Placeholder](./assets/img/MATT/Score.png)
+![Results Graph Placeholder](/assets/img/MATT/Score.png)
 
 ---
 
-## 🤔 Discussion
 
 ### 📌 Key Takeaways
 - **MATT significantly improves translation quality** by leveraging structured **multi-agent collaboration**.

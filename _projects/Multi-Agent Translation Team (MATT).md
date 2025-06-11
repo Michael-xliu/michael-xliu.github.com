@@ -50,9 +50,9 @@ MATT refines translation in a **two-layered process**:
 
 | Model | Vietnamese | Hindi | Malayalam |
 |--------|------------|------|------------|
-| Baseline | 0.2471 | 0.1390 | 0.0158 |
+| **Baseline** | **0.2471** | **0.1390** | **0.0158** |
 | **MATT** | **0.2952** | **0.1681** | **0.0231** |
-| Google Translate | 0.3886 | 0.2548 | 0.0728 |
+| **Google Translate** | **0.3886** | **0.2548** | **0.0728** |
 
 - MATT **outperforms the baseline** consistently across all languages.
 - **Human evaluations** favor MATT over both **GT and baseline models** in fluency and contextual adaptation.

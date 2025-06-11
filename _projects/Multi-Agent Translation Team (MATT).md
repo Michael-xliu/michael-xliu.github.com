@@ -2,7 +2,7 @@
 layout: page
 title: Multi-Agent Translation Team (MATT) - Published
 description: Enhancing Low-Resource Language Translation through Multi-Agent Translation Team (MATT)
-img: /assets/img/MATT/Architecture.png
+img: /assets/img/MATT/Architecture_logo.png
 importance: 1
 category: work
 ---

@@ -1,57 +1,120 @@
 ---
 layout: page
 title: Building an Enterprise Chatbot with Open WebUI, AWS Bedrock, and Custom RAG Pipelines
-description: CNN Traffic Sign Classification
-img: /assets/img/GTSRB/output_10_0.png
+description: Enterprise Chatbot Architecture and Demo
+img: /assets/img/chatbot/WebUI.png
 importance: 2
 category: work
 ---
 
-
 # Building an Enterprise Chatbot with Open WebUI, AWS Bedrock, and Custom RAG Pipelines
 
 ## Description
-An enterprise chatbot leveraging Open WebUI and AWS Bedrock API on Docker, enabling users to interact with LLMs while providing custom RAG pipelines for enhanced retrieval and decision-making.
+An enterprise chatbot project that integrates Open WebUI, AWS Bedrock, and custom RAG pipelines. It supports secure, scalable deployments on AWS EC2, enables flexible tool use, and is highly customizable for enterprise settings.
 
-## Overview
-This project aims to develop an enterprise chatbot leveraging Open WebUI and AWS Bedrock API on Docker. It enables users to interact with readily available LLMs on Bedrock while also providing custom pipelines for Retrieval-Augmented Generation (RAG) implementations.
+---
 
-## Current Setup
-- **Infrastructure**: Hosted on AWS EC2
-- **UI**: Open WebUI for chatbot interaction
-- **LLM Backend**: AWS Bedrock API
-- **Deployment**: Docker containerized application
-- **Users**: Limited to a few users for initial testing
-- **Security & Scalability**: Designed for enterprise-level deployment with robust security and scalability considerations
-  - **Security Measures**:
-    - First non-share and training agreements with the LLM provider
-    - Secure private network for restricted access
-    - Potential integration of Single Sign-On (SSO) authentication for enhanced security
-  - **Scalability**:
-    - Access to the latest and most advanced LLMs through the provider
-    - Secure infrastructure to support organization-wide deployment
+## Demo
 
-## Features
-- Direct access to AWS Bedrock-hosted models
-- Custom RAG pipelines for specific team use cases
-- Scalable deployment with Docker
+*Insert GIFs or screenshots here showing the UI, RAG config panel, or tool calling workflow.*
 
-## Work in Progress
-- Enhancing multi-user support and performance scaling
-- Expanding RAG pipelines with improved document retrieval and ranking
-- Integrating additional enterprise authentication and access control mechanisms
+---
+
+## Security
+
+- Hosted on **AWS EC2** with a **private network via VPN**
+- **Okta OIDC Single Sign-On (SSO)** integrated for user authentication
+- Adheres to enterprise-level security practices
+
+---
+
+## License
+
+- **Permissive license**
+  - Fully customizable
+  - Access to the complete codebase
+  - Redistribution for profit is restricted
+
+---
+
+## Front-End
+
+- **UI**: Open WebUI
+- **Branding Support**: Customizable logos, colors, and interface text
+
+---
+
+## LLM Integration
+
+- Enforced **Enterprise Policies**
+  - No training or data sharing by provider
+- **LLM Providers**:
+  - AWS Bedrock
+  - LiteLLM (local routing or multi-provider support)
+
+---
+
+## RAG Architecture
+
+### 1. Built-in Knowledgebase (Open WebUI)
+
+- Uses local embedding model: `all-MiniLM-L6-v2`
+  - Ref: [SBERT](https://www.sbert.net/)
+- Indexing & Vectorization done locally
+- Configurable:
+  - Chunk size, top-p, reranking models
+- Template-driven response generation
+- Limitation: < **1GB** total data
+- Example query: *"Tell me about gradient descent"*
+
+### 2. AWS Knowledgebase (Enterprise-Scale)
+
+- Designed for larger datasets (>1GB)
+- Bedrock supports:
+  - Multiple parsing strategies
+  - Custom chunking logic
+  - Embedding + graph-based retrieval
+- Integrated with proprietary enterprise content
+
+---
+
+## Tool Use
+
+- Tools are **custom-built**
+- Allow Open WebUI to interact with:
+  - AWS Knowledgebase
+  - Bedrock-hosted LLMs
+- **Native tool-calling** experience
+- Returns **citations** for transparency
+
+---
+
+## MCP Proxy (Model Context Protocol)
+
+- Connects local MCP server with remote applications via OpenAPI
+- Acts as a **proxy bridge**
+  - Ref: [MCP GitHub](https://github.com/modelcontextprotocol/servers?tab=readme-ov-file)
+- Enables:
+  - Time-based and memory-sensitive tools
+  - Unified context management
+
+---
+
+## Features Covered
+
+- 🔍 Web search integration  
+- 📁 Document upload and retrieval  
+- 🔧 Tool execution via LLM  
+- 📚 Scalable document ingestion (via AWS or local)
+
+---
 
 ## Next Steps
-- Optimize latency and inference cost
-- Implement logging and monitoring
-- Expand model options beyond Bedrock-hosted LLMs
 
-## Lessons Learned
-- Docker simplifies deployment but requires proper resource allocation on EC2
-- Fine-tuning retrieval mechanisms is crucial for effective RAG implementation
-- Bedrock's API provides stability, but customization is needed for enterprise workflows
+- Optimize performance and latency
+- Improve multi-user load balancing
+- Extend model support and feedback collection
+- Add end-to-end logging and observability
 
-## Future Goals
-- Deploy the chatbot at scale within the organization
-- Enable integrations with internal knowledge bases
-- Implement feedback loops for model improvement
+---
+

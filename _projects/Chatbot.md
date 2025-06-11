@@ -1,18 +1,12 @@
 ---
 layout: page
 title: Building an Enterprise Chatbot with Open WebUI, AWS Bedrock, and Custom RAG Pipelines
-description: Enterprise Chatbot Architecture and Demo
+description: An enterprise chatbot project that integrates Open WebUI, AWS Bedrock, and custom RAG pipelines. It supports secure, scalable deployments on AWS EC2, enables flexible tool use, and is highly customizable for enterprise settings.
 img: /assets/img/chatbot/WebUI.png
 importance: 2
 category: work
 ---
 
-# Building an Enterprise Chatbot with Open WebUI, AWS Bedrock, and Custom RAG Pipelines
-
-## Description
-An enterprise chatbot project that integrates Open WebUI, AWS Bedrock, and custom RAG pipelines. It supports secure, scalable deployments on AWS EC2, enables flexible tool use, and is highly customizable for enterprise settings.
-
----
 
 ## Demo
 

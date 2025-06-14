@@ -86,7 +86,7 @@ After running multiple 1v1 matches:
 
 - Add expressive personalities (e.g., aggressive vs defensive Claude)
 - Try formats like `gen9randombattle` or doubles
-- Benchmark against GPT-4 or Mixtral
+- Benchmark against GPT-4 or Gemini Models
 
 ## Code & Setup
 

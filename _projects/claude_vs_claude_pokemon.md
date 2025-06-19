@@ -43,36 +43,37 @@ At every turn, the model receives a full natural language summary of the current
 I simulated 10 battles between Claude 3.7 and Claude 4, the results are Claude 4 was able to win ~80% of the time.
 
 <a href="https://youtu.be/iB_NjlXiDKQ">
-  <img src="/assets/img/Pokemon/Screenshot.png" alt="Claude 4 vs Claude 3.7" width="600">
+  <img src="/assets/img/Pokemon/Screenshot.png" alt="Claude 4 vs Claude 3.7" width="800">
 </a>
-In head-to-head matchups:
 
+
+In head-to-head matchups:
 - 3 battles between Claude 4 and GPT-4.1 — Claude 4 won all of them.
 [Cladue 4 vs GPT 4.1](https://youtu.be/h8rFj9WjwCU)
 
 - 3 battles between Claude 4 and Gemini 2.5 Flash — Claude 4 won all of them.
 [Cladue 4 vs gEMINI 2.5 Flash](https://youtu.be/P1VVkIv4HF0)
 
+---
 
 ## 2nd Place: Claude 3.7
 
 Claude 3.7 showed very strong base reasoning and tactical awareness, consistently outperforming GPT-4.1 and Gemini 2.5 Flash in most simulations. While slightly less refined in long-term sequencing compared to Claude 4, it still demonstrated high-level multi-turn planning.
 
 ---
-
 # Full Comparative Breakdown
 
-| Skill Category     | Claude 4  | Claude 3.7  | GPT-4.1      | Gemini 2.5 Flash |
-| ------------------ | --------- | ------------ | ------------ | ---------------- |
-| **Opening Strategy (Early Game Setup)** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐  | ⭐⭐⭐    | ⭐⭐⭐ |
-| **Threat Recognition (Identifying Dangers)** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐  | ⭐⭐    | ⭐⭐ |
-| **Risk Management (Balancing Safety vs Aggression)** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐  | ⭐⭐⭐  | ⭐⭐ |
-| **Recovery Usage (Healing Correctly)** | ⭐⭐⭐ | ⭐⭐⭐  | ⭐    | ⭐ |
-| **Switching Logic (Choosing Correct Pokémon Swap)** | **4** | **3** | **2** | **1** |
-| **Endgame Planning (Finishing the Match Efficiently)** | **4** | **3** | **2** | **1** |
+| Skill              | Claude 4 | Claude 3.7 | GPT-4.1 | Gemini 2.5 |
+| ------------------ | -------- | ---------- | ------- | ---------- |
+| **Overall**            | █████    | ████       | ██      | ██         |
+| **Threat Recognition** | █████    | ████       | ██      | ██         |
+| **Risk Management**    | ████     | ████       | ██      | ██         |
+| **Recovery Usage**     | ████     | ███        | ██      | ██         |
+| **Switching Logic**    | ████     | ██         | ██      | ██         |
+| **Endgame Planning**   | ███      | ██         | ██      | ██         |
+
 
 ---
-
 # Why Did Claude 4 Dominate?
 
 Part of Claude 4's edge likely comes from its broad exposure to Pokémon-related data during training — including battle logs, tier lists, guides, and community discussions. That gives it a strong understanding of mechanics, matchups, and common strategies.
@@ -91,7 +92,7 @@ But knowledge alone doesn’t fully explain its performance. What really sets Cl
 
 To further test Claude 4's capabilities, I entered the arena directly, making live tactical decisions while Claude 4 operated autonomously.
 <a href="https://youtu.be/iB_NjlXiDKQ">
-  <img src="/assets/img/Pokemon/claude_4_vs_myself.png" alt="Claude 4 vs Myself!" width="600">
+  <img src="/assets/img/Pokemon/claude_4_vs_myself.png" alt="Claude 4 vs Myself!" width="800">
 </a>
 
 # Furture Work
@@ -102,6 +103,6 @@ Beyond that, several broader directions could push this experiment even further:
 
 * **Chain-of-Thought Reasoning**: So far, models operate purely in “non-thinking” mode — returning actions without explicit reasoning steps. Allowing models to generate chain-of-thought explanations before selecting moves could improve long-term planning and decision stability. Testing both modes side-by-side would give insight into when explicit reasoning helps or hurts.
 
-* **Limited Information Battles**: Real Pokémon battles involve imperfect information — you don’t know all your opponent’s team members or moves upfront. Future tests could limit visibility to simulate realistic scouting, forcing models to predict hidden threats and adapt as information is revealed.
+* **Limited Information Battles**: Real Pokémon battles involve imperfect information — you don’t know all your opponent’s team members or moves upfront. Future tests could limit visibility to simulate realistic scouting, forcing models to predict hidden threats and adapt as information is revealed. Additionally, we could provide models with partial visibility into the outcome of each move — such as how much damage was dealt, whether the move was blocked, resisted, or triggered secondary effects like paralysis or burn — enabling them to better assess the consequences of prior actions and plan future turns more intelligently.
 
 * **Multi-Agent Doubles Battles**: Moving into double battles would introduce coordination challenges — models would need to manage two Pokémon simultaneously, balance support roles, and plan around partner synergies. This would create a much richer multi-agent reasoning environment.

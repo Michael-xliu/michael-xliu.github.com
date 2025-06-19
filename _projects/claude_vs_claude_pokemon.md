@@ -91,3 +91,14 @@ But knowledge alone doesn’t fully explain its performance. What really sets Cl
 To further test Claude 4's capabilities, I entered the arena directly, making live tactical decisions while Claude 4 operated autonomously.
 [![Claude 4 vs Myself!](/assets/img/Pokemon/claude_4_vs_myself.png)](https://youtu.be/iB_NjlXiDKQ)
 
+# Furture Work
+
+Currently, models don’t get feedback after each move — they don’t see whether their attack landed, how much damage it did, or whether it was resisted or blocked. This limits short-term reactivity and forces them to make decisions without knowing recent outcomes. In future versions, we plan to give models full turn-by-turn result feedback to enable sharper in-battle adjustments and real-time adaptation.
+
+Beyond that, several broader directions could push this experiment even further:
+
+* **Chain-of-Thought Reasoning**: So far, models operate purely in “non-thinking” mode — returning actions without explicit reasoning steps. Allowing models to generate chain-of-thought explanations before selecting moves could improve long-term planning and decision stability. Testing both modes side-by-side would give insight into when explicit reasoning helps or hurts.
+
+* **Limited Information Battles**: Real Pokémon battles involve imperfect information — you don’t know all your opponent’s team members or moves upfront. Future tests could limit visibility to simulate realistic scouting, forcing models to predict hidden threats and adapt as information is revealed.
+
+* **Multi-Agent Doubles Battles**: Moving into double battles would introduce coordination challenges — models would need to manage two Pokémon simultaneously, balance support roles, and plan around partner synergies. This would create a much richer multi-agent reasoning environment.

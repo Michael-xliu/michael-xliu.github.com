@@ -8,12 +8,6 @@ category: work
 ---
 
 
-## Demo
-
-*Insert GIFs or screenshots here showing the UI, RAG config panel, or tool calling workflow.*
-
----
-
 ## Security
 
 - Hosted on **AWS EC2** with a **private network via VPN**

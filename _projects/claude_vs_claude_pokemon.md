@@ -16,7 +16,7 @@ The objective? See how each LLM reasons and strategizes when given full battle i
 
 ## Watch the Battle
 
-D:\SMU DS\Michael'swebsite\michael-xliu.github.com\assets\video\Claude 4 vs 3.7.mp4
+
 
 <video controls width="800" poster="/assets/img/Pokemon/Screenshot.png">
   <source src="/assets/video/Claude 4 vs 3.7.mp4" type="video/mp4">

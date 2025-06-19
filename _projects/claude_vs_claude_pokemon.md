@@ -2,7 +2,7 @@
 layout: page
 title: "Large Language Models Pokémon Battle Arena"
 description: "Claude 4 vs GPT-4.1 vs Gemini 2.5 Flash vs Human in AI Pokémon Battle"
-img: "/assets/img/Pokemon/Pokemon_Logo.png"
+img: "/assets/img/Pokemon/Pokemon Logo.png"
 importance: 3
 category: fun
 ---
@@ -42,7 +42,7 @@ At every turn, the model receives a full natural language summary of the current
 
 I simulated 10 battles between Claude 3.7 and Claude 4, the results are Claude 4 was able to win ~80% of the time.
 
-[![Claude 4 vs Claude 3.7](/assets/img/pokemon_ai_battle/claude4_vs_claude37_thumb.png)](https://youtu.be/YOUR_VIDEO_LINK)
+[![Claude 4 vs Claude 3.7](/assets/img/pokemon/Screenshot.png.png)](https://youtu.be/YOUR_VIDEO_LINK)
 
 In head-to-head matchups:
 
@@ -67,25 +67,22 @@ Claude 3.7 showed very strong base reasoning and tactical awareness, consistentl
 | **Threat Recognition (Identifying Dangers)** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐  | ⭐⭐    | ⭐⭐ |
 | **Risk Management (Balancing Safety vs Aggression)** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐  | ⭐⭐⭐  | ⭐⭐ |
 | **Recovery Usage (Healing Correctly)** | ⭐⭐⭐ | ⭐⭐⭐  | ⭐    | ⭐ |
-| **Switching Logic (Choosing Correct Pokémon Swap)** | Precise | Good | Overreactive | Erratic |
-| **Endgame Planning (Finishing the Match Efficiently)** | Masterful | Strong | Inconsistent | Incomplete |
+| **Switching Logic (Choosing Correct Pokémon Swap)** | **4** | **3** | **2** | **1** |
+| **Endgame Planning (Finishing the Match Efficiently)** | **4** | **3** | **2** | **1** |
 
 ---
 
-# Key Takeaways
+# Why Did Claude 4 Dominate?
 
-Claude 4 exhibited advanced multi-turn, long-horizon tactical reasoning:
+Part of Claude 4's edge likely comes from its broad exposure to Pokémon-related data during training — including battle logs, tier lists, guides, and community discussions. That gives it a strong understanding of mechanics, matchups, and common strategies.
 
-* Strategic setup and hazard management
-* Balanced midgame control and recovery
-* Optimal endgame KO pathing
-* Flexible adaptation to evolving game state
+But knowledge alone doesn’t fully explain its performance. What really sets Claude apart is its ability to reason across multiple turns:
 
-**Claude 3.7** showed reliable turn-by-turn reasoning, often making solid risk-adjusted decisions, but lacked some of the deeper foresight Claude 4 displayed during complicated endgame situations.
+* It projects future board states and sequences moves several turns ahead.
+* It balances risk, knowing when to boost, when to heal, and when to press an advantage.
+* It adapts to uncertainty, even without seeing immediate results after each action.
 
-GPT-4.1 and Gemini displayed safer, reactive playstyles with limited proactive escalation.
-
-Claude 4 operated with **high Elo competitive skill**, suggesting genuine agentic multi-turn reasoning capabilities even in stochastic, open-ended environments.
+ Claude 4 essentially plays like a high-level competitive player. It’s not just reacting; it’s planning.
 
 ---
 

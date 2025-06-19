@@ -12,11 +12,11 @@ category: AI Projects
 In this project, I developed a fully automated Pokémon battle arena to rigorously benchmark several leading large language models (LLMs) in a high-pressure, multi-turn strategic game environment. The core objective: test their tactical reasoning, adaptive planning, risk management, and agentic autonomy — skills essential for advanced AI systems.
 
 ### Competitors
-- **Claude 3.7** (Anthropic, via AWS Bedrock)
-- **Claude 4** (Anthropic, via AWS Bedrock)
-- **GPT-4.1** (OpenAI, via OpenAI API)
-- **Gemini 2.5 Flash** (Google, via Gemini API)
-- **Human (myself, playing manually via custom interface)**
+- **Claude 3.7** (Anthropic)
+- **Claude 4** (Anthropic)
+- **GPT-4.1** (OpenAI)
+- **Gemini 2.5 Flash** (Google)
+- **Human** (myself)
 
 All battles ran under identical conditions using Pokémon Showdown’s **gen9randombattle** format, ensuring randomized but balanced teams across all nine generations of Pokémon. No pre-selected teams or setups — only pure in-the-moment decision-making.
 
@@ -29,7 +29,6 @@ All battles ran under identical conditions using Pokémon Showdown’s **gen9ran
 - **OpenAI Python SDK** — GPT-4.1 integration
 - **Google Gemini SDK** — Gemini 2.5 Flash integration
 - **Python asyncio** — Full real-time orchestration of asynchronous battles
-- **InquirerPy** — Interactive terminal interface for human-controlled play
 - **Full Turn-by-Turn Logging** — Capturing every model prompt, game state, and tactical reasoning per turn
 
 ---
@@ -39,7 +38,9 @@ All battles ran under identical conditions using Pokémon Showdown’s **gen9ran
 ### Battle 1 — Claude 4 vs Claude 3.7
 Claude 4 demonstrated stronger predictive play, better setup timing, and superior awareness of win conditions.
 
-**Video Recording:** _(Insert Video Here)_
+**Video Recording:** 
+[![Claude 4 vs Claude 3.7]( /assets/img/pokemon_ai_battle/claude4_vs_claude37_thumb.png )](https://youtu.be/YOUR_VIDEO_LINK)
+
 
 ---
 
@@ -64,14 +65,15 @@ Claude 4 demonstrated stronger predictive play, better setup timing, and superio
 ### Battle 2 — Claude 4 vs GPT-4.1
 GPT-4.1 produced reasonable defensive play but struggled to handle multi-turn threats and shifting offensive momentum. Claude 4 steadily capitalized on every safe setup window.
 
-**Video Recording:** _([Claude 4 vs GPT-4.1](https://youtu.be/h8rFj9WjwCU))_
+**Video Recording:** 
+_([![Claude 4 vs GPT-4.1]( /assets/img/pokemon_ai_battle/claude4_vs_claude37_thumb.png )](https://youtu.be/h8rFj9WjwCU))_
 
 ---
 
 ### Battle 3 — Claude 4 vs Gemini 2.5 Flash (non-thinking)
 Gemini 2.5 Flash showed quick reactions but often failed to escalate threats. Its switching logic frequently left it vulnerable against Claude 4’s highly coordinated stat-boosting sweepers.
 
-**Video Recording:** _([Claude 4 vs Gemini 2.5 Flash (non-thinking)](https://youtu.be/P1VVkIv4HF0))_
+**Video Recording:** _([![Claude 4 vs Gemini 2.5 Flash (non-thinking)]( /assets/img/pokemon_ai_battle/claude4_vs_claude37_thumb.png )](https://youtu.be/P1VVkIv4HF0))_
 
 ---
 
@@ -84,18 +86,6 @@ Gemini 2.5 Flash showed quick reactions but often failed to escalate threats. It
 ### Accurate Type and Coverage Calculations
 - Chose super-effective coverage consistently.
 - Examples: Knock Off vs Dunsparce, Focus Blast vs Gyarados, Psyshock vs Poison types like Overqwil — all correctly leveraging weaknesses.
-
-### Smart Risk Management
-- When opponents were low HP, Claude consistently opted for guaranteed KO moves rather than unnecessary setups.
-- Managed status effects well, choosing safe damage-over-time win conditions (e.g., Scald burns).
-
-### Multi-Turn Sequencing
-- Balanced boosting, healing, and attacking based on board state.
-- Didn’t tunnel into greedy play — adapted fluidly between aggression and defense depending on momentum.
-
-### Predictive Opponent Modeling
-- Correctly read opponent archetypes: stallers vs sweepers vs hazard-setters.
-- Knew when opponents were unlikely to threaten back immediately.
 
 ### Minimal Tactical Errors
 - Claude 4 exhibited almost zero critical mistakes across multiple full-length battles.
@@ -130,14 +120,6 @@ GPT-4.1 and Gemini both demonstrated reasonable but reactive playstyles — defa
 Claude 4 played like a **high Elo competitive battler** — a benchmark that strongly suggests true agentic multi-turn reasoning capabilities in complex, stochastic environments.
 
 ---
-
-### Teaser: Human vs Claude 4 Showdown
-
-After model-vs-model testing, I went head-to-head against Claude 4 myself to see who is better, here is the full battle:
-
-**Video Recording:** _(Insert Video Here)_
-
-
 
 ### Teaser: Human vs Claude 4 — The Ultimate Challenge
 After benchmarking model vs model, I entered the arena myself to face off against Claude 4 directly. Using the same fully interactive interface, I manually made tactical decisions while Claude 4 operated autonomously.

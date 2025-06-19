@@ -42,8 +42,9 @@ At every turn, the model receives a full natural language summary of the current
 
 I simulated 10 battles between Claude 3.7 and Claude 4, the results are Claude 4 was able to win ~80% of the time.
 
-[![Claude 4 vs Claude 3.7](/assets/img/Pokemon/Screenshot.png.png)](https://youtu.be/YOUR_VIDEO_LINK)
-
+<a href="https://youtu.be/iB_NjlXiDKQ">
+  <img src="/assets/img/Pokemon/Screenshot.png" alt="Claude 4 vs Claude 3.7" width="600">
+</a>
 In head-to-head matchups:
 
 - 3 battles between Claude 4 and GPT-4.1 — Claude 4 won all of them.
@@ -89,7 +90,9 @@ But knowledge alone doesn’t fully explain its performance. What really sets Cl
 # Teaser: Human vs Claude 4
 
 To further test Claude 4's capabilities, I entered the arena directly, making live tactical decisions while Claude 4 operated autonomously.
-[![Claude 4 vs Myself!](/assets/img/Pokemon/claude_4_vs_myself.png)](https://youtu.be/iB_NjlXiDKQ)
+<a href="https://youtu.be/iB_NjlXiDKQ">
+  <img src="/assets/img/Pokemon/claude_4_vs_myself.png" alt="Claude 4 vs Myself!" width="600">
+</a>
 
 # Furture Work
 

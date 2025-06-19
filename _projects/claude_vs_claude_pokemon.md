@@ -65,15 +65,14 @@ Claude 4 demonstrated stronger predictive play, better setup timing, and superio
 ### Battle 2 — Claude 4 vs GPT-4.1
 GPT-4.1 produced reasonable defensive play but struggled to handle multi-turn threats and shifting offensive momentum. Claude 4 steadily capitalized on every safe setup window.
 
-**Video Recording:** 
-_([![Claude 4 vs GPT-4.1]( /assets/img/pokemon_ai_battle/claude4_vs_claude37_thumb.png )](https://youtu.be/h8rFj9WjwCU))_
+**Video Recording:** _([Claude 4 vs GPT-4.1](https://youtu.be/h8rFj9WjwCU))_
 
 ---
 
 ### Battle 3 — Claude 4 vs Gemini 2.5 Flash (non-thinking)
 Gemini 2.5 Flash showed quick reactions but often failed to escalate threats. Its switching logic frequently left it vulnerable against Claude 4’s highly coordinated stat-boosting sweepers.
 
-**Video Recording:** _([![Claude 4 vs Gemini 2.5 Flash (non-thinking)]( /assets/img/pokemon_ai_battle/claude4_vs_claude37_thumb.png )](https://youtu.be/P1VVkIv4HF0))_
+**Video Recording:** _([Claude 4 vs Gemini 2.5 Flash (non-thinking)](https://youtu.be/P1VVkIv4HF0))_
 
 ---
 

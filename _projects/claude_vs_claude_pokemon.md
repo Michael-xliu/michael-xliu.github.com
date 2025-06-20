@@ -63,20 +63,30 @@ Claude 3.7 showed very strong base reasoning and tactical awareness, consistentl
 ---
 <h2>Full Comparative Breakdown</h2>
 
-<div style="display: grid; grid-template-columns: 180px 100px 100px 100px 100px; row-gap: 8px; column-gap: 16px;">
+<style>
+  .comparison-table {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    gap: 8px 16px;
+    max-width: 100%;
+  }
+  @media (max-width: 600px) {
+    .comparison-table {
+      grid-template-columns: 1fr 1fr;
+    }
+    .comparison-table div:nth-child(5n+1) { grid-column: 1 / -1; font-weight: bold; margin-top: 1em; }
+  }
+</style>
+
+<div class="comparison-table">
 
 <div><b>Skill</b></div><div><b>Claude 4</b></div><div><b>Claude 3.7</b></div><div><b>GPT-4.1</b></div><div><b>Gemini 2.5</b></div>
 
-<div><b>Overall</b></div><div>█████</div><div>████</div><div>██</div><div>██</div>
-
-<div>Threat Recognition</div><div>█████</div><div>████</div><div>██</div><div>██</div>
-
-<div>Risk Management</div><div>████</div><div>████</div><div>██</div><div>██</div>
-
-<div>Recovery Usage</div><div>████</div><div>███</div><div>██</div><div>██</div>
-
+<div>Overall</div><div>█████</div><div>████</div><div>███</div><div>██</div>
+<div>Threat Recognition</div><div>█████</div><div>████</div><div>███</div><div>██</div>
+<div>Risk Management</div><div>████</div><div>████</div><div>███</div><div>██</div>
+<div>Recovery Usage</div><div>████</div><div>███</div><div>███</div><div>██</div>
 <div>Switching Logic</div><div>████</div><div>██</div><div>██</div><div>██</div>
-
 <div>Endgame Planning</div><div>███</div><div>██</div><div>██</div><div>██</div>
 
 </div>

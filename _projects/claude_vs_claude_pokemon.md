@@ -63,14 +63,13 @@ Claude 3.7 showed very strong base reasoning and tactical awareness, consistentl
 ---
 # Full Comparative Breakdown
 
-| Skill              | Claude 4 | Claude 3.7 | GPT-4.1 | Gemini 2.5 |
-| ------------------ | -------- | ---------- | ------- | ---------- |
-| **Overall**            | █████    | ████       | ██      | ██         |
-| **Threat Recognition** | █████    | ████       | ██      | ██         |
-| **Risk Management**    | ████     | ████       | ██      | ██         |
-| **Recovery Usage**     | ████     | ███        | ██      | ██         |
-| **Switching Logic**    | ████     | ██         | ██      | ██         |
-| **Endgame Planning**   | ███      | ██         | ██      | ██         |
+Skill              Claude 4 Claude 3.7 GPT-4.1 Gemini 2.5 
+**Overall**            █████    ████       ██      ██         
+**Threat Recognition** █████    ████       ██      ██         
+**Risk Management**    ████     ████       ██      ██         
+**Recovery Usage**     ████     ███        ██      ██         
+**Switching Logic**    ████     ██         ██      ██         
+**Endgame Planning**   ███      ██         ██      ██         
 
 
 ---

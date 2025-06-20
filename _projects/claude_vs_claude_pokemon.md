@@ -61,15 +61,25 @@ In head-to-head matchups:
 Claude 3.7 showed very strong base reasoning and tactical awareness, consistently outperforming GPT-4.1 and Gemini 2.5 Flash in most simulations. While slightly less refined in long-term sequencing compared to Claude 4, it still demonstrated high-level multi-turn planning.
 
 ---
-# Full Comparative Breakdown
+<h2>Full Comparative Breakdown</h2>
 
-| Skill              | Claude 4 | Claude 3.7 | GPT-4.1 | Gemini 2.5 
-| **Overall**            | █████    | ████       | ██      | ██         |
-| **Threat Recognition** | █████    | ████       | ██      | ██         |
-| **Risk Management**    | ████     | ████       | ██      | ██         |
-| **Recovery Usage**     | ████     | ███        | ██      | ██         |
-| **Switching Logic**    | ████     | ██         | ██      | ██         |
-| **Endgame Planning**   | ███      | ██         | ██      | ██         |
+<div style="display: grid; grid-template-columns: 180px 100px 100px 100px 100px; row-gap: 8px; column-gap: 16px;">
+
+<div><b>Skill</b></div><div><b>Claude 4</b></div><div><b>Claude 3.7</b></div><div><b>GPT-4.1</b></div><div><b>Gemini 2.5</b></div>
+
+<div><b>Overall</b></div><div>█████</div><div>████</div><div>██</div><div>██</div>
+
+<div>Threat Recognition</div><div>█████</div><div>████</div><div>██</div><div>██</div>
+
+<div>Risk Management</div><div>████</div><div>████</div><div>██</div><div>██</div>
+
+<div>Recovery Usage</div><div>████</div><div>███</div><div>██</div><div>██</div>
+
+<div>Switching Logic</div><div>████</div><div>██</div><div>██</div><div>██</div>
+
+<div>Endgame Planning</div><div>███</div><div>██</div><div>██</div><div>██</div>
+
+</div>
 
 
 ---

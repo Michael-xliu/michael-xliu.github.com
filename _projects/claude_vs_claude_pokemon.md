@@ -4,7 +4,7 @@ title: "Large Language Models Pokémon Battle Arena"
 description: "Claude 4 vs GPT-4.1 vs Gemini 2.5 Flash vs Human in AI Pokémon Battle"
 img: "/assets/img/Pokemon/Pokemon Logo.png"
 importance: 3
-category: "AI fun"
+category: fun
 ---
 
 # Introduction

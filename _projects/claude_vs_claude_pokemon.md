@@ -42,8 +42,8 @@ At every turn, the model receives a full natural language summary of the current
 
 I simulated 10 battles between Claude 3.7 and Claude 4, the results are Claude 4 was able to win ~80% of the time.
 
-<a href="https://youtu.be/iB_NjlXiDKQ">
-  <img src="/assets/img/Pokemon/Screenshot.png" alt="Claude 4 vs Claude 3.7" width="800">
+<a href="https://youtu.be/do2UVwoH4j8?si=Q5iPJfijyc0kzWaI">
+  <img src="/assets/img/Pokemon/Screenshot.png" alt="Claude 4 vs Claude 3.7" width="900">
 </a>
 
 
@@ -80,7 +80,7 @@ Claude 3.7 showed very strong base reasoning and tactical awareness, consistentl
 
 <div class="comparison-table">
 
-<div><b>Skill</b></div><div><b>Claude 4</b></div><div><b>Claude 3.7</b></div><div><b>GPT-4.1</b></div><div><b>Gemini 2.5</b></div>
+<div><b>Skill</b></div><div><b>Claude 4</b></div><div><b>Claude 3.7</b></div><div><b>GPT-4.1</b></div><div><b>Gemini-2.5-Flash</b></div>
 
 <div>Overall</div><div>█████</div><div>████</div><div>███</div><div>██</div>
 <div>Threat Recognition</div><div>█████</div><div>████</div><div>███</div><div>██</div>
@@ -107,9 +107,9 @@ But knowledge alone doesn’t fully explain its performance. What really sets Cl
 
 ---
 
-# Teaser: Human vs Claude 4
+# Bonus: Myself vs Claude 4
 
-To further test Claude 4's capabilities, I entered the arena directly, making live tactical decisions while Claude 4 operated autonomously.
+To further test Claude 4's capabilities, I entered into a head to head battle against Claude 4. Here is a video of me trying to prove Humans can dominate AI!
 <a href="https://youtu.be/iB_NjlXiDKQ">
   <img src="/assets/img/Pokemon/claude_4_vs_myself.png" alt="Claude 4 vs Myself!" width="800">
 </a>

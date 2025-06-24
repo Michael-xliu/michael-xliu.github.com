@@ -63,20 +63,6 @@ Claude 3.7 showed very strong base reasoning and tactical awareness, consistentl
 ---
 <h2>Full Comparative Breakdown</h2>
 
-<style>
-  .comparison-table {
-    display: grid;
-    grid-template-columns: 1.5fr repeat(4, 1fr);
-    gap: 8px 16px;
-    max-width: 100%;
-  }
-  @media (max-width: 600px) {
-    .comparison-table {
-      grid-template-columns: 1fr 1fr;
-    }
-    .comparison-table div:nth-child(5n+1) { grid-column: 1 / -1; font-weight: bold; margin-top: 1em; }
-  }
-</style>
 
 <div class="comparison-table">
 

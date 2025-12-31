@@ -21,14 +21,12 @@ Financial Roaster is an AI-powered tool that analyzes your spending data and del
 
 ## Tech Stack
 
-| Component | Technology |
-|-----------|------------|
-| AI Engine | AWS Bedrock + Claude 3 Haiku |
-| Workflow | LangGraph + Agent Core |
-| Backend | FastAPI (Python) |
-| Frontend | HTML/CSS/JavaScript |
-| Deployment | Render |
-| OCR | PyMuPDF + EasyOCR |
+- **AI Engine**: AWS Bedrock + Claude 3 Haiku
+- **Workflow**: LangGraph + Agent Core
+- **Backend**: FastAPI (Python)
+- **Frontend**: HTML/CSS/JavaScript
+- **Deployment**: Render
+- **OCR**: PyMuPDF + EasyOCR
 
 ---
 

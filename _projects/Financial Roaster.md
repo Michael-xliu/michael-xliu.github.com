@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Financial Roaster
-description: An AI-powered financial analysis tool using AWS Bedrock and multi-agent orchestration to humorously critique spending habits with 4 specialized AI agents working in parallel.
+description: An AI-powered financial analysis tool using AWS Bedrock and multi-agent orchestration to analyze spending habits with 4 specialized AI agents working in parallel.
 img: /assets/img/financial-roaster/preview.png
 importance: 3
 category: fun
@@ -13,90 +13,76 @@ category: fun
 
 ---
 
-## The Problem
-Your bank statement is a disaster. You need someone to tell you the truth. But humans are too nice. Enter: **AI financial bullying as a service.** 💸
+## Overview
 
-## 🏗️ Tech Stack (The Good Stuff)
+Financial Roaster is an AI-powered tool that analyzes your spending data and delivers personalized, humorous feedback on your financial habits. It uses a multi-agent architecture to provide comprehensive analysis.
 
-**🧠 AI Engine**: AWS Bedrock + Claude 3 Haiku (fast & cheap roasts)
-**🔗 Workflow**: LangGraph + Agent Core (multi-agent orchestration)
-**⚡ Backend**: FastAPI (Python) with parallel processing
-**🎨 Frontend**: Pure HTML/CSS/JS (no bloat, just roasts)
-**🚀 Deployment**: Render (one-click deploy)
-**📄 OCR**: PyMuPDF + EasyOCR (read your financial shame)
+---
 
-## 🤖 The Agent Army (4 Specialized Roasters)
+## Tech Stack
 
-Instead of one confused AI, we built **4 expert critics** that work together:
+| Component | Technology |
+|-----------|------------|
+| AI Engine | AWS Bedrock + Claude 3 Haiku |
+| Workflow | LangGraph + Agent Core |
+| Backend | FastAPI (Python) |
+| Frontend | HTML/CSS/JavaScript |
+| Deployment | Render |
+| OCR | PyMuPDF + EasyOCR |
 
-### 1. **📋 The Accountant**
-*"Let me fix your messy data first..."*
-- Cleans up transaction names (`UBER *TRIP 123ABC` → `Uber`)
-- Fills missing categories with educated guesses
-- Flags obvious disasters
+---
 
-### 2. **🔍 The Detective**
-*"I see patterns in your chaos..."*
-- Spots secret recurring subscriptions you forgot about
-- Finds your end-of-month panic spending sprees
-- Counts how many times you hit the same drive-thru
+## Multi-Agent Architecture
 
-### 3. **⚠️ The Risk Manager**
-*"This is concerning..."*
-- Identifies overdraft behavior
-- Flags impulse purchases that'll ruin you
-- Spots credit card addiction patterns
+The system uses 4 specialized AI agents that work together:
 
-### 4. **📊 The Judge**
-*"Your financial chaos score is..."*
-- Calculates 0-100 chaos rating
-- 0-20: Boring adult, 81-100: Financial dumpster fire
-- Provides evidence for the final roast
+### 1. The Accountant
+- Cleans and normalizes transaction names
+- Categorizes uncategorized transactions
+- Flags data quality issues
 
-## ⚡ The Magic: Parallel Processing
+### 2. The Detective
+- Identifies recurring subscriptions
+- Detects spending patterns and trends
+- Highlights frequent merchants
+
+### 3. The Risk Manager
+- Identifies potential overdraft behavior
+- Flags impulse purchase patterns
+- Detects concerning spending habits
+
+### 4. The Judge
+- Calculates an overall financial health score (0-100)
+- Synthesizes findings from other agents
+- Generates the final analysis
+
+---
+
+## Parallel Processing
+
+Agents run concurrently using Python's ThreadPoolExecutor, reducing analysis time by approximately 50%:
 
 ```python
-# Run 3 agents simultaneously (2x faster than sequential)
 with ThreadPoolExecutor(max_workers=3) as executor:
     detective_future = executor.submit(find_patterns)
     risk_manager_future = executor.submit(assess_risks)
     judge_future = executor.submit(calculate_chaos)
-    # Combine all their findings → BRUTAL ROAST
 ```
-
-## 🎯 Why This Architecture Rocks
-
-**💰 Cost**: $0.01/roast (vs $0.10+ with GPT-4)
-**⚡ Speed**: 2 seconds end-to-end analysis
-**🎪 Quality**: 4 specialized perspectives = better roasts
-**🔧 Reliability**: If one agent fails, others keep roasting
-**📈 Scalable**: Easy to add new agent types (investment shaming, anyone?)
-
-## 🚀 Production Deployment
-
-**Development**: Built with Claude Code + Agent Core
-**Hosting**: Render auto-deploys from GitHub
-**Environment**: Python 3.11 + AWS Bedrock integration
-**Performance**: Handles concurrent roasting with 0.5 CPU
-**Caching**: Smart file-hash caching (don't roast the same disaster twice)
-
-## 🏆 The Results
-
-✅ **4,000+ users roasted** in first week
-✅ **Average chaos score: 67/100** (humanity is doomed)
-✅ **Most common red flag**: "Too much DoorDash"
-✅ **Viral potential**: Premium flip cards for social sharing
-
-## 🤯 Technical Flexes
-
-- **Multi-modal input**: CSV, PDF, images, manual text
-- **Smart parsing**: Regex + AI to extract financial disasters from any format
-- **3D flip cards**: CSS transforms + canvas generation for Instagram-worthy roasts
-- **Mobile optimized**: Because financial shame happens everywhere
-- **Zero-downtime**: Render handles scaling while we focus on roasting
 
 ---
 
-**The Bottom Line**: We turned financial advice into entertainment using **4 specialized AI agents**, **parallel processing**, and **modern web deployment**. The result? An app that's both technically impressive and genuinely hilarious.
+## Key Features
 
-*Now go fix your spending habits. The agents are watching.* 👀💸
+- **Multi-format input**: Supports CSV, PDF, images, and manual text entry
+- **Smart parsing**: Combines regex and AI for accurate data extraction
+- **Interactive results**: 3D flip cards for shareable output
+- **Mobile responsive**: Optimized for all device sizes
+- **Cost efficient**: ~$0.01 per analysis
+
+---
+
+## Deployment
+
+- **Platform**: Render (auto-deploys from GitHub)
+- **Environment**: Python 3.11 + AWS Bedrock
+- **Caching**: File-hash based caching to avoid redundant processing

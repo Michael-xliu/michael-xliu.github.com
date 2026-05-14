@@ -1,108 +1,56 @@
 ---
 layout: page
-title: Building an Enterprise Chatbot with Open WebUI, AWS Bedrock, and Custom RAG Pipelines
-description: An enterprise chatbot project that integrates Open WebUI, AWS Bedrock, and custom RAG pipelines. It supports secure, scalable deployments on AWS EC2, enables flexible tool use, and is highly customizable for enterprise settings.
+title: Pinegrove GenAI Platform
+description: Internal GenAI platform with Open WebUI, AWS Bedrock, native RAG, SSO, prompt/version registry, model routing, and SLO dashboards.
 img: /assets/img/chatbot/WebUI.png
 importance: 2
 category: work
 ---
 
+## Overview
 
-## Security
+Built an internal GenAI platform for investment and operations workflows, combining Open WebUI, AWS Bedrock, native RAG, SSO, prompt/version registry, model routing, and SLO dashboards.
 
-- Hosted on **AWS EC2** with a **private network via VPN**
-- **Okta OIDC Single Sign-On (SSO)** integrated for user authentication
-- Adheres to enterprise-level security practices
-
----
-
-## License
-
-- **Permissive license**
-  - Fully customizable
-  - Access to the complete codebase
-  - Redistribution for profit is restricted
+The platform supported **30+ active users**, **10k+ interactions**, roughly **99% uptime**, quarterly compliance log exports, and **30% faster investment and operations workflows**.
 
 ---
 
-## Front-End
+## Architecture
 
-- **UI**: Open WebUI
-- **Branding Support**: Customizable logos, colors, and interface text
-
----
-
-## LLM Integration
-
-- Enforced **Enterprise Policies**
-  - No training or data sharing by provider
-- **LLM Providers**:
-  - AWS Bedrock
-  - LiteLLM (local routing or multi-provider support)
+- **Interface:** Open WebUI
+- **LLM layer:** AWS Bedrock with model routing
+- **Retrieval:** Native RAG over internal documents and email-derived knowledge sources
+- **Governance:** SSO, role-aware access, audit trails, and compliance log exports
+- **Operations:** SLO dashboards for latency, cost, accuracy, and reliability
+- **Prompt operations:** Prompt/version registry for controlled iteration and rollback
 
 ---
 
-## RAG Architecture
+## Retrieval and Reliability
 
-### 1. Built-in Knowledgebase (Open WebUI)
-
-- Uses local embedding model: `all-MiniLM-L6-v2`
-  - Ref: [SBERT](https://www.sbert.net/)
-- Indexing & Vectorization done locally
-- Configurable:
-  - Chunk size, top-p, reranking models
-- Template-driven response generation
-- Limitation: < **1GB** total data
-- Example query: *"Tell me about gradient descent"*
-
-### 2. AWS Knowledgebase (Enterprise-Scale)
-
-- Designed for larger datasets (>1GB)
-- Bedrock supports:
-  - Multiple parsing strategies
-  - Custom chunking logic
-  - Embedding + graph-based retrieval
-- Integrated with proprietary enterprise content
+The system used retrieval-strict prompting, citations, fallback/no-answer behavior, and offline evaluation to improve answer quality and reduce hallucinations. Hybrid retrieval and reranking helped make responses more grounded and useful for investment and operations teams.
 
 ---
 
-## Tool Use
+## Impact
 
-- Tools are **custom-built**
-- Allow Open WebUI to interact with:
-  - AWS Knowledgebase
-  - Bedrock-hosted LLMs
-- **Native tool-calling** experience
-- Returns **citations** for transparency
-
----
-
-## MCP Proxy (Model Context Protocol)
-
-- Connects local MCP server with remote applications via OpenAPI
-- Acts as a **proxy bridge**
-  - Ref: [MCP GitHub](https://github.com/modelcontextprotocol/servers?tab=readme-ov-file)
-- Enables:
-  - Time-based and memory-sensitive tools
-  - Unified context management
+- Supported **30+ active users**
+- Served **10k+ interactions**
+- Maintained roughly **99% uptime**
+- Accelerated investment and operations workflows by **30%**
+- Enabled quarterly compliance log exports
+- Reduced LLM operating cost through response caching and model routing
 
 ---
 
-## Features Covered
+## Tools and Technologies
 
-- 🔍 Web search integration  
-- 📁 Document upload and retrieval  
-- 🔧 Tool execution via LLM  
-- 📚 Scalable document ingestion (via AWS or local)
-
----
-
-## Next Steps
-
-- Optimize performance and latency
-- Improve multi-user load balancing
-- Extend model support and feedback collection
-- Add end-to-end logging and observability
-
----
-
+- AWS Bedrock
+- Open WebUI
+- PostgreSQL / pgvector
+- ECS
+- S3
+- SSO
+- Python
+- FastAPI
+- Docker

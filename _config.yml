@@ -8,11 +8,11 @@ middle_name:
 last_name: Liu
 email: haitieliu1993@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Passionate data scientist specializing in machine learning and big data analytics, seeking to leverage a robust analytical background and business acumen to drive data-driven decision-making in the tech industry. Based on [*folio](https://github.com/bogoli/-folio) design.
+  AI Engineer building production GenAI systems for finance and operations teams, with depth in RAG, agents, LLM evaluation, cloud deployment, governance, and observability.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: AI engineer, GenAI, RAG, agents, LLM evaluation, finance automation, cloud deployment, portfolio
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -104,7 +104,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  Feel welcomed to send me an email or message me on Linkedin.
+  Feel welcome to send me an email or message me on LinkedIn.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

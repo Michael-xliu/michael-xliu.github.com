@@ -1,38 +1,66 @@
-- title: General Information
-  type: map
+- title: Summary
+  type: list
   contents:
-    - name: Full Name
-      value: Michael Liu
-    - name: Languages
-      value: English, Mandarin
+    - AI Engineer building production GenAI systems for finance and operations teams.
+    - Strong in RAG, agents, LLM evaluation, cloud deployment, governance, and observability.
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: AI Engineer
+      institution: Ignition Consultants, Boston, MA
+      year: 2026
+      description:
+        - Build AI agents and workflow automations for CFO and finance operations, integrating LLM tools with financial models, client data, and reporting workflows.
+        - Design research, document-analysis, and operations pipelines with human-in-the-loop review, audit trails, role-aware access controls, and measurable time-savings targets.
+
+    - title: Data Scientist
+      institution: Pinegrove Venture Partners, Menlo Park, CA
+      year: 2024-2026
+      description:
+        - Shipped AWS inferencing gateway and retrieval service for a Teams copilot over 200k+ emails and 200 GB of documents using ECS, Bedrock, and pgvector; achieved p95 800 ms at 2.0 QPS and 99.9% availability.
+        - Built hybrid retrieval, reranking, retrieval-strict prompts, citations, fallback/no-answer behavior, and offline evals; improved answer accuracy 30% and reduced hallucinations 40%.
+        - Reduced cost per 1k tokens 15% through response caching and dynamic model routing; added SLO dashboards for latency, cost, accuracy, and error budgets.
+        - Administered 100+ Postgres tables and delivered executive-ready analyses across 15-25 ad hoc stakeholder requests per month.
+
+    - title: AI Consultant
+      institution: SVB Capital, Menlo Park, CA
+      year: 2024
+      description:
+        - Developed investment copilot with Microsoft Teams, Bedrock/Anthropic, S3, SSO, and role-aware access, reducing time-to-first-draft by 50%.
+        - Delivered SVB's State of the Market Report: AI from roughly 80 internal sources.
+
+- title: Earlier Experience
+  type: list
+  contents:
+    - Data Analyst, Inception Inc - built SQL models, Tableau dashboards, and campaign analyses driving $3.1M budget reallocation, 21% conversion lift, and 38% fewer ad hoc requests.
+    - Graduate Researcher, Southern Methodist University - led labs in pandas, scikit-learn, and statistical modeling; mentored capstone teams through model evaluation and stakeholder communication.
+
+- title: Selected Project
+  type: time_table
+  contents:
+    - title: Pinegrove GenAI Platform
+      institution: Internal GenAI platform
+      year: 2024 - 2025
+      description:
+        - Built internal GenAI platform with Open WebUI, AWS Bedrock, native RAG, SSO, prompt/version registry, model routing, and SLO dashboards.
+        - Supported 30+ active users, 10k+ interactions, roughly 99% uptime, quarterly compliance log exports, and 30% faster investment/operations workflows.
 
 - title: Education
   type: time_table
   contents:
-    - title: Master's Degree
+    - title: M.S. Data Science
       institution: Southern Methodist University
       year: 2024
       description:
-        - Data Science.
-        - Machine Learning.
-    - title: Bachelor's Degree
+        - GPA 4.0
+    - title: B.A. Business Administration
       institution: University of Washington
       year: 2018
-      description:
-        - Business Adminitration.
-        - Management.
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Data Scientist
-      institution: Pinegrove Capital Partners
-      year: 2024 - Present
-      description:
-        - LLM Projects
-
-
-- title: Other Interests
+- title: Publication and Certifications
   type: list
   contents:
-    - <u>Hobbies:</u> Guitar, Video Games, etc.
+    - "Publication: Multi-Agent Translation Team (MATT), SMU Data Science Review, Apr 2025."
+    - "Certifications: Harvard CS50 Artificial Intelligence; Tableau Desktop Specialist."
+    - "Award: Best Capstone Presentation - SMU."

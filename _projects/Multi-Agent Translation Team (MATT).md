@@ -5,6 +5,7 @@ description: Low-resource language translation project using LLM review, editing
 img: /assets/img/MATT/Architecture_logo.png
 importance: 1
 category: work
+tech_stack: [Llama 3.1, Google Translate API, Python, LLM evaluation, multi-agent review]
 ---
 
 ## Abstract

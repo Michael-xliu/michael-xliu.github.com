@@ -5,6 +5,7 @@ description: A small AWS Bedrock app that reviews spending data with four parall
 img: /assets/img/financial-roaster/preview.png
 importance: 3
 category: fun
+tech_stack: [AWS Bedrock, Claude 3 Haiku, LangGraph, FastAPI, Render, OCR]
 ---
 
 ## Try It Out

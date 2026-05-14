@@ -5,6 +5,7 @@ description: Minesweeper in Python with a logic-based assistant player.
 img: /assets/img/minesweeper/minelogo.png
 importance: 4
 category: fun
+tech_stack: [Python, Pygame, logical inference, game state modeling]
 ---
 
 ## Introduction

@@ -5,6 +5,7 @@ description: Internal GenAI platform with Open WebUI, AWS Bedrock, RAG, SSO, mod
 img: /assets/img/chatbot/WebUI.png
 importance: 2
 category: work
+tech_stack: [Open WebUI, AWS Bedrock, PostgreSQL, pgvector, ECS, S3, FastAPI]
 ---
 
 ## Overview

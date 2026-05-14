@@ -40,15 +40,39 @@ display_categories: [work, fun]
 
   .project-index__title {
     margin: 0;
+    font-family: "Roboto Slab", Georgia, serif;
     font-size: 1.15rem;
+    font-weight: 400;
     line-height: 1.35;
     text-transform: none;
+  }
+
+  .project-index__link {
+    color: var(--global-text-color);
   }
 
   .project-index__description {
     margin: 0;
     color: var(--global-text-color-light);
     line-height: 1.65;
+  }
+
+  .project-index__meta {
+    display: block;
+    margin-top: 0.45rem;
+    color: var(--global-theme-color);
+    font-family: "Roboto Slab", Georgia, serif;
+    font-size: 0.84rem;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.5;
+  }
+
+  .project-index__meta-label {
+    color: var(--global-text-color-light);
+    font-style: italic;
+    font-weight: 300;
   }
 
   .project-index__link:hover {
@@ -81,7 +105,15 @@ display_categories: [work, fun]
                 <a class="project-index__link" href="{{ project.url | relative_url }}">{{ project.title }}</a>
               {%- endif %}
             </h3>
-            <p class="project-index__description">{{ project.description }}</p>
+            <div>
+              <p class="project-index__description">{{ project.description }}</p>
+              {%- if project.tech_stack %}
+                <span class="project-index__meta">
+                  <span class="project-index__meta-label">tech:</span>
+                  {{ project.tech_stack | join: " / " }}
+                </span>
+              {%- endif %}
+            </div>
           </article>
         {%- endfor %}
       </div>
@@ -100,7 +132,15 @@ display_categories: [work, fun]
               <a class="project-index__link" href="{{ project.url | relative_url }}">{{ project.title }}</a>
             {%- endif %}
           </h3>
-          <p class="project-index__description">{{ project.description }}</p>
+          <div>
+            <p class="project-index__description">{{ project.description }}</p>
+            {%- if project.tech_stack %}
+              <span class="project-index__meta">
+                <span class="project-index__meta-label">tech:</span>
+                {{ project.tech_stack | join: " / " }}
+              </span>
+            {%- endif %}
+          </div>
         </article>
       {%- endfor %}
     </div>

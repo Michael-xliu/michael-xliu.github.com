@@ -5,6 +5,7 @@ description: "Claude 4 vs Claude 3.7 vs GPT-4.1 vs Gemini 2.5 Flash vs Myself in
 img: "/assets/img/Pokemon/Pokemon Logo.png"
 importance: 1
 category: fun
+tech_stack: [Pokemon Showdown, Claude, GPT-4.1, Gemini, battle simulation, prompt design]
 ---
 
 # Introduction

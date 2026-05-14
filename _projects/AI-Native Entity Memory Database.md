@@ -4,6 +4,7 @@ title: Entity Memory Database
 description: PostgreSQL/Supabase project for canonical entities, generated dossiers, source provenance, activity timelines, commitments, evidence, RLS, and audit logs.
 importance: 3
 category: work
+tech_stack: [PostgreSQL, Supabase, PL/pgSQL, RLS, n8n, LLM agents]
 ---
 
 ## Overview

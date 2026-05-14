@@ -6,53 +6,104 @@ description: Selected GenAI, data, and automation projects.
 nav: true
 nav_order: 3
 display_categories: [work, fun]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{%- if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {%- for category in page.display_categories %}
-  <h2 class="category">{{ category }}</h2>
-  {%- assign categorized_projects = site.projects | where: "category", category -%}
-  {%- assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
-  <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
-    </div>
-  </div>
-  {%- else -%}
-  <div class="grid">
-    {%- for project in sorted_projects -%}
-      {% include projects.html %}
-    {%- endfor %}
-  </div>
-  {%- endif -%}
-  {% endfor %}
+<style>
+  .project-index {
+    display: grid;
+    gap: 2.25rem;
+  }
 
-{%- else -%}
-<!-- Display projects without categories -->
+  .project-index__category {
+    margin-bottom: 1rem;
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .project-index__list {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  .project-index__item {
+    display: grid;
+    grid-template-columns: minmax(11rem, 0.8fr) 1.4fr;
+    gap: 1.5rem;
+    min-height: 7.5rem;
+    padding: 1.35rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .project-index__title {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.35;
+    text-transform: none;
+  }
+
+  .project-index__description {
+    margin: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.65;
+  }
+
+  .project-index__link:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .project-index__item {
+      grid-template-columns: 1fr;
+      gap: 0.65rem;
+      min-height: 0;
+    }
+  }
+</style>
+
+<div class="project-index">
+{%- if site.enable_project_categories and page.display_categories %}
+  {%- for category in page.display_categories %}
+    {%- assign categorized_projects = site.projects | where: "category", category -%}
+    {%- assign sorted_projects = categorized_projects | sort: "importance" %}
+    <section>
+      <h2 class="project-index__category">{{ category }}</h2>
+      <div class="project-index__list">
+        {%- for project in sorted_projects %}
+          <article class="project-index__item">
+            <h3 class="project-index__title">
+              {%- if project.redirect %}
+                <a class="project-index__link" href="{{ project.redirect }}">{{ project.title }}</a>
+              {%- else %}
+                <a class="project-index__link" href="{{ project.url | relative_url }}">{{ project.title }}</a>
+              {%- endif %}
+            </h3>
+            <p class="project-index__description">{{ project.description }}</p>
+          </article>
+        {%- endfor %}
+      </div>
+    </section>
+  {%- endfor %}
+{%- else %}
   {%- assign sorted_projects = site.projects | sort: "importance" -%}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
-  <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
+  <section>
+    <div class="project-index__list">
+      {%- for project in sorted_projects %}
+        <article class="project-index__item">
+          <h3 class="project-index__title">
+            {%- if project.redirect %}
+              <a class="project-index__link" href="{{ project.redirect }}">{{ project.title }}</a>
+            {%- else %}
+              <a class="project-index__link" href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            {%- endif %}
+          </h3>
+          <p class="project-index__description">{{ project.description }}</p>
+        </article>
+      {%- endfor %}
     </div>
-  </div>
-  {%- else -%}
-  <div class="grid">
-    {%- for project in sorted_projects -%}
-      {% include projects.html %}
-    {%- endfor %}
-  </div>
-  {%- endif -%}
-{%- endif -%}
+  </section>
+{%- endif %}
 </div>

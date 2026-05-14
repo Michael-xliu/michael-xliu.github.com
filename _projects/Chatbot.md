@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Pinegrove GenAI Platform
-description: Internal GenAI platform with Open WebUI, AWS Bedrock, native RAG, SSO, prompt/version registry, model routing, and SLO dashboards.
+title: Internal GenAI Platform
+description: Internal GenAI platform with Open WebUI, AWS Bedrock, RAG, SSO, model routing, and SLO dashboards.
 img: /assets/img/chatbot/WebUI.png
 importance: 2
 category: work
@@ -9,7 +9,7 @@ category: work
 
 ## Overview
 
-Built an internal GenAI platform for investment and operations workflows, combining Open WebUI, AWS Bedrock, native RAG, SSO, prompt/version registry, model routing, and SLO dashboards.
+Built an internal GenAI platform for investment and operations workflows. It combined Open WebUI, AWS Bedrock, RAG, SSO, model routing, a prompt/version registry, and SLO dashboards.
 
 The platform supported **30+ active users**, **10k+ interactions**, roughly **99% uptime**, quarterly compliance log exports, and **30% faster investment and operations workflows**.
 
@@ -28,7 +28,7 @@ The platform supported **30+ active users**, **10k+ interactions**, roughly **99
 
 ## Retrieval and Reliability
 
-The system used retrieval-strict prompting, citations, fallback/no-answer behavior, and offline evaluation to improve answer quality and reduce hallucinations. Hybrid retrieval and reranking helped make responses more grounded and useful for investment and operations teams.
+The retrieval layer used strict prompting, citations, fallback/no-answer behavior, and offline evaluation. Hybrid retrieval and reranking helped keep answers tied to source material.
 
 ---
 

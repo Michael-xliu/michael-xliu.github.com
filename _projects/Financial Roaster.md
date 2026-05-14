@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Financial Roaster
-description: An AI-powered financial analysis tool using AWS Bedrock and multi-agent orchestration to analyze spending habits with 4 specialized AI agents working in parallel.
+description: A small AWS Bedrock app that reviews spending data with four parallel agents and returns a roast-style financial summary.
 img: /assets/img/financial-roaster/preview.png
 importance: 3
 category: fun
@@ -15,7 +15,7 @@ category: fun
 
 ## Overview
 
-Financial Roaster is an AI-powered tool that analyzes your spending data and delivers personalized, humorous feedback on your financial habits. It uses a multi-agent architecture to provide comprehensive analysis.
+Financial Roaster reviews spending data and turns it into a roast-style summary. Four agents handle cleanup, pattern detection, risk checks, and the final write-up.
 
 ---
 
@@ -32,7 +32,7 @@ Financial Roaster is an AI-powered tool that analyzes your spending data and del
 
 ## Multi-Agent Architecture
 
-The system uses 4 specialized AI agents that work together:
+The app uses four agents:
 
 ### 1. The Accountant
 - Cleans and normalizes transaction names
@@ -74,7 +74,7 @@ with ThreadPoolExecutor(max_workers=3) as executor:
 - **Multi-format input**: Supports CSV, PDF, images, and manual text entry
 - **Smart parsing**: Combines regex and AI for accurate data extraction
 - **Interactive results**: 3D flip cards for shareable output
-- **Mobile responsive**: Optimized for all device sizes
+- **Mobile responsive**: Works on phone and desktop screens
 - **Cost efficient**: ~$0.01 per analysis
 
 ---

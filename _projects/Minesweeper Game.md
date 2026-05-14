@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Minesweeper Game
-description: AI-Powered Minesweeper Game
+description: Minesweeper in Python with a logic-based assistant player.
 img: /assets/img/minesweeper/minelogo.png
 importance: 4
 category: fun
@@ -9,7 +9,7 @@ category: fun
 
 ## Introduction
 
-In this project, I developed an interactive Minesweeper game using Python and the Pygame library. The game not only allows users to play Minesweeper with a graphical interface but also features an Artificial Intelligence (AI) agent capable of making moves based on logical deductions.
+I built a playable Minesweeper game in Python with Pygame, plus a logic-based assistant that can suggest a safe move when the board gives it enough information.
 
 
 ![Additional Screenshot](/assets/img/minesweeper/2024-01-06%20205328.png)
@@ -17,7 +17,7 @@ In this project, I developed an interactive Minesweeper game using Python and th
 ## Technologies Used
 
 - **Python**: The core programming language for the project.
-- **Pygame**: A Python library used for game development, providing the tools necessary for rendering graphics, handling events, and more.
+- **Pygame**: Used for rendering the board and handling user input.
 - **Minesweeper and AI Logic**: Custom Python classes to handle the game logic and AI decision-making.
 
 ## Game Features
@@ -25,7 +25,7 @@ In this project, I developed an interactive Minesweeper game using Python and th
 - **Standard Minesweeper Gameplay**: Users can click to reveal cells and right-click to place flags on cells where they suspect mines are located.
 - **AI Integration**: At any point during the game, players can invoke an AI agent to make a safe move or a random move if no obvious safe moves are available.
 - **Customizable Difficulty**: The game's grid size and the number of mines can be adjusted to change the difficulty level.
-- **Graphical Interface**: The game presents a visually appealing interface with clear indications of mines, flags, and numbers indicating nearby mines.
+- **Graphical Interface**: The board shows mines, flags, and nearby mine counts clearly.
 
 ## Development Process
 
@@ -39,11 +39,11 @@ In this project, I developed an interactive Minesweeper game using Python and th
 ## Challenges and Learnings
 
 - **AI Implementation**: Developing an AI agent that makes decisions based on the current state of the game was challenging and required a good understanding of logical deduction and Minesweeper's rules.
-- **Pygame Mechanics**: Learning and effectively using Pygame for rendering the game's interface was a key part of the project.
+- **Pygame Mechanics**: I used Pygame for rendering, clicks, resets, and board updates.
 
-## Conclusion
+## Notes
 
-This project was a rewarding experience that combined game development with artificial intelligence. It not only solidified my skills in Python programming but also in applying logical problem-solving to create an intelligent game agent.
+The interesting part was translating Minesweeper rules into a small knowledge base: known safe cells, known mines, and sentences about unresolved cells.
 
 ## Screenshots
 
@@ -53,10 +53,10 @@ This project was a rewarding experience that combined game development with arti
 
 ## Check Out the Code
 
-The complete implementation of my Minesweeper game, including the AI agent, is available on GitHub. Feel free to explore the code, try it out, and contribute if you're interested!
+The implementation, including the assistant player, is available on GitHub.
 
 [View the Minesweeper Project on GitHub](https://github.com/Michael-xliu/minesweeper)
 
-In this repository, you'll find detailed code for the game logic, AI algorithms, and graphical interface using Pygame. The README file in the repository provides more information on how to set up and run the game.
+The repository includes the game logic, assistant logic, and Pygame interface.
 
 

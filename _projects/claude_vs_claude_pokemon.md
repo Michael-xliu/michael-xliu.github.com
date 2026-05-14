@@ -3,7 +3,7 @@ layout: page
 title: "AI Pokémon Battle Arena"
 description: "Claude 4 vs Claude 3.7 vs GPT-4.1 vs Gemini 2.5 Flash vs Myself in AI Pokémon Battle"
 img: "/assets/img/Pokemon/Pokemon Logo.png"
-importance: 3
+importance: 1
 category: fun
 ---
 
@@ -49,10 +49,10 @@ I simulated 10 battles between Claude 3.7 and Claude 4, the results are Claude 4
 
 In head-to-head matchups:
 - 3 battles between Claude 4 and GPT-4.1 — Claude 4 won all of them.
-[Cladue 4 vs GPT 4.1](https://youtu.be/h8rFj9WjwCU)
+[Claude 4 vs GPT-4.1](https://youtu.be/h8rFj9WjwCU)
 
 - 3 battles between Claude 4 and Gemini 2.5 Flash — Claude 4 won all of them.
-[Cladue 4 vs gEMINI 2.5 Flash](https://youtu.be/P1VVkIv4HF0)
+[Claude 4 vs Gemini 2.5 Flash](https://youtu.be/P1VVkIv4HF0)
 
 ---
 
@@ -103,7 +103,7 @@ But knowledge alone doesn’t fully explain its performance. What really sets Cl
 * It balances risk, knowing when to boost, when to heal, and when to press an advantage.
 * It adapts to uncertainty, even without seeing immediate results after each action.
 
- Claude 4 essentially plays like a high-level competitive player. It’s not just reacting; it’s planning.
+ Claude 4 played closer to a competitive player than the other models in this setup. It planned several turns ahead instead of choosing only the strongest-looking move each turn.
 
 ---
 
@@ -114,7 +114,7 @@ To further test Claude 4's capabilities, I entered into a head to head battle ag
   <img src="/assets/img/Pokemon/claude_4_vs_myself.png" alt="Claude 4 vs Myself!" width="800">
 </a>
 
-# Furture Work
+# Future Work
 
 Currently, models don’t get feedback after each move — they don’t see whether their attack landed, how much damage it did, or whether it was resisted or blocked. This limits short-term reactivity and forces them to make decisions without knowing recent outcomes. In future versions, we plan to give models full turn-by-turn result feedback to enable sharper in-battle adjustments and real-time adaptation.
 

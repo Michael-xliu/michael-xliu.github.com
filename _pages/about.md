@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI Engineer building production GenAI systems for finance and operations teams.
+subtitle: AI Engineer working on GenAI systems for finance and operations teams.
 
 profile:
   align: right
@@ -16,10 +16,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an **AI Engineer** focused on production GenAI systems for finance and operations teams. My work spans **RAG**, **agents and tool calling**, **LLM evaluation**, **cloud deployment**, **governance**, and **observability**.
+I am an **AI Engineer** working on GenAI systems for finance and operations teams. Most of my work sits where LLMs meet messy business data: retrieval, agents, evaluation, cloud deployment, access control, and monitoring.
 
-Currently, I build AI agents and workflow automations for CFO and finance operations. Previously, I built investment and operations copilots for venture capital and financial services teams, including retrieval systems over large document and email corpora, role-aware access controls, citations, fallback behavior, and reliability-focused monitoring.
+Currently, I build agents and workflow automations for CFO and finance operations. Before that, I worked on investment and operations copilots for venture capital and financial services teams, including retrieval over large document and email corpora, role-aware access, citations, fallback behavior, and reliability dashboards.
 
-My background combines a **Master's degree in Data Science** with a **Bachelor's degree in Business Administration**, which helps me bridge technical architecture with practical business outcomes.
+My background combines a **Master's degree in Data Science** with a **Bachelor's degree in Business Administration**, so I tend to care about both the system design and the workflow it is supposed to improve.
 
 Let's **connect** if you are working on GenAI systems, finance automation, or data products.
